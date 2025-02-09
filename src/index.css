@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-900 text-gray-100;
+  }
+}
+
+@layer components {
+  .sidebar-link {
+    @apply flex items-center gap-3 px-4 py-3 text-gray-400 hover:text-white hover:bg-gray-800 rounded-lg transition-colors;
+  }
+  
+  .sidebar-link.active {
+    @apply bg-gray-800 text-white;
+  }
+  
+  .stat-card {
+    @apply bg-gray-800 p-6 rounded-xl border border-gray-700 hover:border-teal-500 transition-colors;
+  }
+}
